@@ -5,7 +5,7 @@
 ### 安装
 
 ```shell
-npm i --save transition-group-taro
+npm i --save @kne/transition-group-taro
 ```
 
 
@@ -28,6 +28,32 @@ const BaseExample = ()=>{
 };
 
 render(<BaseExample />);
+
+```
+
+- Transition
+- 这里填写示例说明
+- transitionGroupTaro(@kne/transition-group-taro),lodash(lodash),antd(@kne/antd-taro),tarojsComponents(@tarojs/components)
+
+```jsx
+const {useState} = React;
+const {Button} = antd;
+const {Transition} = transitionGroupTaro;
+const {View} = tarojsComponents;
+
+const BaseExample = () => {
+  const [show, setShow] = useState(false);
+  return (
+    <>
+      <Button onClick={() => setShow(prevState => !prevState)}>Toggle</Button>
+      <Transition in={show} timeout={500}>
+        <View>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</View>
+      </Transition>
+    </>
+  );
+};
+
+render(<BaseExample/>);
 
 ```
 

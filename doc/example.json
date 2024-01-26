@@ -10,6 +10,29 @@
         "name": "这里填写包导出名称(这是一个注释字段，需要添加到[scope]中)",
         "packageName": "这里填写包名(这是一个注释字段，需要添加到[scope]中)"
       }
+    },
+    {
+      "title": "Transition",
+      "description": "这里填写示例说明",
+      "code": "./transition.js",
+      "scope": [
+        {
+          "name": "transitionGroupTaro",
+          "packageName": "@kne/transition-group-taro"
+        },
+        {
+          "name": "lodash",
+          "packageName": "lodash"
+        },
+        {
+          "name": "antd",
+          "packageName": "@kne/antd-taro"
+        },
+        {
+          "name": "tarojsComponents",
+          "packageName": "@tarojs/components"
+        }
+      ]
     }
   ]
 }
